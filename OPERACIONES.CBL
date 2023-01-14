@@ -1,0 +1,27 @@
+******************************************************************
+      *ADD PARA SUMAR 
+      *SUBTRACT PARA RESTAR
+      *MULTIPLY PARA MULTIPLICAR
+      *DIVIDE PARA DIVIDIR
+      ***********
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. OPERACIONES.
+       DATA DIVISION.
+        FILE SECTION.
+       WORKING-STORAGE SECTION.
+       
+       01 NUM1 PIC 9(4).
+       01 NUM2 PIC 9(4).
+       01 RESULTADO PIC 9(5).
+       
+       PROCEDURE DIVISION.
+       MAIN-PROCEDURE.
+       DISPLAY "INTRODUCE EL PRIMER NUMERO:".
+        ACCEPT NUM1.
+        DISPLAY "INTRODUCE EL SEGUNDO NUMERO"
+        ACCEPT NUM2.
+        ADD NUM1 TO NUM2 GIVING RESULTADO.
+       DISPLAY "EL RESULTADO ES " RESULTADO.
+    
+        STOP RUN.
+        END PROGRAM OPERACIONES.
